@@ -6,7 +6,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const [year, setYear] = useState('');
   const [sort, setSort] = useState('');
-
+  //Millozza aggiunte
   const fetchMovies = () => {
     setLoading(true);
     const query = new URLSearchParams({ ...(year && { year }), ...(sort && { sort }) }).toString();
